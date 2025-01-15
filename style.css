@@ -1,0 +1,39 @@
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  border-radius: 50%;
+  background: url('clock.png') no-repeat center/cover;
+  position: relative;
+  margin: auto;
+}
+.hand {
+  width: 50%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 50%; /* Dreht sich um die Mitte */
+  transform: rotate(90deg);
+  transition: all 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.hour-hand {
+  width: 30%; /* Kürzester Zeiger */
+  height: 4px; /* Dickster Zeiger */
+  background: black;
+}
+
+.min-hand {
+  width: 40%; /* Mittellanger Zeiger */
+  height: 3px; /* Mitteldick */
+  background: black;
+}
+
+.second-hand {
+  width: 50%; /* Kürzerer Sekundenzeiger */
+  height: 2px;
+  background: red;
+}
