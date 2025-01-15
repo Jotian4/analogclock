@@ -1,13 +1,14 @@
-
+/* Analog clock styles with three hands: hour, minute, second */
 .clock {
   width: 300px;
   height: 300px;
   border: 5px solid black;
   border-radius: 50%;
-  background: url('clock.png') no-repeat center/cover;
+  background: url('clock.png') no-repeat center/cover; /* Clock background picture */
   position: relative;
-  margin: auto;
+  margin: auto; /* Center the clock */
 }
+
 .hand {
   width: 50%;
   height: 2px;
@@ -15,25 +16,25 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform-origin: 0% 50%; /* Dreht sich um die Mitte */
+  transform-origin: 0% 50%; /* Rotate around base */
   transform: rotate(90deg);
-  transition: all 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+  transition: all 0.05s cubic-bezier(0.4, 2.3, 0.3, 1); /* Clean rotation */
 }
 
 .hour-hand {
-  width: 30%; /* Kürzester Zeiger */
-  height: 4px; /* Dickster Zeiger */
+  width: 30%; /* Shortest */
+  height: 4px; /* Thickest */
   background: black;
 }
 
 .min-hand {
-  width: 40%; /* Mittellanger Zeiger */
-  height: 3px; /* Mitteldick */
+  width: 40%; /* Medium length */
+  height: 3px; /* Medium thickness */
   background: black;
 }
 
 .second-hand {
-  width: 50%; /* Kürzerer Sekundenzeiger */
-  height: 2px;
+  width: 50%; /* Longest */
+  height: 2px; /* Thinnest */
   background: red;
 }
